@@ -23,6 +23,9 @@ int (*get_func(char specifier)) (va_list)
 		case 'r':
 			func = print_reverse;
 			break;
+		case 'd':
+			func = print_d;
+			break;
 		default:
 			func = NULL;
 	}

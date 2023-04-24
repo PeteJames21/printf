@@ -22,6 +22,9 @@ int main(void)
 	/* Print strings with specifiers */
 	n = _printf("I am not a %c%c%c", 'c', 'a', 't');
 	printf(" (%d chars)\n", n);
+	
+	n = _printf("%d%% all the time", 100);
+	printf(" (%d chars)\n", n);
 
 	/* Print using an invalid specifier and invalid number of arguments */
 	n = _printf("I like %z", "foo", "bar");

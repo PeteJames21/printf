@@ -9,4 +9,7 @@ int (*get_func(char specifier)) (va_list);
 int print_char(va_list);
 int print_string(va_list);
 int print_reverse(va_list);
+int print_d(va_list args);
+int count_chars(int n);
+
 #endif
