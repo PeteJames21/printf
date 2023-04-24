@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	int n = 0;  /* Number of characters printed */
 	int i;  /* For looping through the format string */
 	char next_char;
-	int (*func) (va_list);
+	int (*func)(va_list);
 	va_list args;
 
 	if (!format)
@@ -38,12 +38,7 @@ int _printf(const char *format, ...)
 			{
 				/* Get function for handling the specifier */
 				func = get_func(next_char);
-				if (!func)
-				{
-				/* incorrect specifier has been used*/
-					;
-				}
-				else
+				if (func)
 				{
 					/* `func` will get the next arg and print it */
 					n += func(args);
