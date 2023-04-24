@@ -26,6 +26,9 @@ int (*get_func(char specifier)) (va_list)
 		case 'd':
 			func = print_d;
 			break;
+		case 'i':
+			func = print_d;
+			break;
 		default:
 			func = NULL;
 	}
