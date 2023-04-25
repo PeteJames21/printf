@@ -32,6 +32,9 @@ int (*get_func(char specifier)) (va_list)
 		case 'R':
 			func = rot13;
 			break;
+		case 'b':
+			func = print_b;
+			break;
 		default:
 			func = NULL;
 	}

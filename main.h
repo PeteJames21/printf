@@ -12,5 +12,7 @@ int print_reverse(va_list);
 int print_d(va_list args);
 int count_chars(int n);
 int rot13(va_list args);
+int print_b(va_list args);
+void int_to_bin(int n, unsigned int *i);
 
 #endif
