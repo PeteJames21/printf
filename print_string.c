@@ -3,7 +3,7 @@
 #include <stdarg.h>
 /**
  * print_string - Returns the length of a string
- * @args: Arguments of a string
+ * @args: Arguments of a String
  *
  * Return:The length of the string
  */
