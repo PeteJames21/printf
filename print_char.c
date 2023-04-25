@@ -5,7 +5,7 @@
 * print_char - print a single char
 * @args: va_list containing the argument to be printed
 *
-* Return: the number of characters printed
+* Return: The number of characters printed
 */
 int print_char(va_list args)
 {
