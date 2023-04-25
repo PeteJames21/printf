@@ -76,3 +76,45 @@ int count_chars(int n)
 
 	return (count);
 }
+
+/**
+* print_b - print the binary representation of an integer
+* @args: va_list containing argument to be printed. The int must be >= 0
+*
+* Return: the number of characters printed
+*/
+int print_b(va_list args)
+{
+	int count = 0;
+	int arg = va_arg(args, int);
+
+	/* n must be >= 0 */
+	if (arg < 0)
+		return (-1);
+
+	if (arg == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	int_to_bin(arg, &count);
+
+	return (count);
+}
+
+/**
+* int_to_bin - print the binary representation of an integer
+* @n: integer to be printed
+* @i: pointer to integer on which to increment number of chars printed
+*/
+void int_to_bin(int n, int *i)
+{
+	if (n == 0)
+		return;
+
+	int_to_bin(n / 2, i);
+
+	_putchar(n % 2 + 48);  /* +48 to convert into to char */
+	*i += 1;
+}
