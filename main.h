@@ -11,5 +11,6 @@ int print_string(va_list);
 int print_reverse(va_list);
 int print_d(va_list args);
 int count_chars(int n);
+int rot13(va_list args);
 
 #endif

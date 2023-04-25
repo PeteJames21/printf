@@ -29,6 +29,10 @@ int main(void)
 	n = _printf("%r", "abcd");
 	printf(" (%d chars)\n", n);
 
+	/* Expected output: Png 1, Qbt 2??? (15 chars) */
+	n = _printf("%R", "Cat 1, Dog 2???");
+	printf(" (%d chars)\n", n);
+
 	/* Print using an invalid specifier and invalid number of arguments */
 	n = _printf("I like %z", "foo", "bar");
 	printf(" (%d chars)\n", n);
