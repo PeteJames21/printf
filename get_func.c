@@ -4,7 +4,7 @@
 
 /**
 * get_func - get function for printing a specified argument type
-* @specifier: data type of the argument to be printed
+* @specifier: Data type of the argument to be printed
 *
 * Return: a function that can print the specified data type
 */
