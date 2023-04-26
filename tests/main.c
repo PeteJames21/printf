@@ -44,6 +44,9 @@ int main(void)
 	printf(" (%d chars)\n", n);
 	/* Expected output: 1 (1 chars)*/
 	n = _printf("%b", 1);
+	printf(" (%d chars)\n\n", n)
+	/* Expected output: 0 (1 chars)*/
+	n = _printf("%b", -500);
 	printf(" (%d chars)\n\n", n);
 
 	/* Print using an invalid specifier and invalid number of arguments */

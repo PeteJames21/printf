@@ -18,7 +18,7 @@ int (*get_func(char specifier)) (va_list)
 			func = print_char;
 			break;
 		case 's':
-			func = print_string;
+			func = print_s;
 			break;
 		case 'r':
 			func = print_reverse;
@@ -35,7 +35,7 @@ int (*get_func(char specifier)) (va_list)
 		case 'b':
 			func = print_b;
 			break;
-		case  'X':
+		case 'X':
 			func = print_X;
 			break;
 		case 'x':

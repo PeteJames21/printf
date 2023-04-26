@@ -85,12 +85,8 @@ int count_chars(int n)
 */
 int print_b(va_list args)
 {
-	int count = 0;
-	int arg = va_arg(args, int);
-
-	/* n must be >= 0 */
-	if (arg < 0)
-		return (-1);
+	unsigned int count = 0;
+	unsigned int arg = va_arg(args, int);
 
 	if (arg == 0)
 	{
@@ -108,7 +104,8 @@ int print_b(va_list args)
 * @n: integer to be printed
 * @i: pointer to integer on which to increment number of chars printed
 */
-void int_to_bin(int n, int *i)
+
+void int_to_bin(int n, unsigned int *i)
 {
 	if (n == 0)
 		return;
