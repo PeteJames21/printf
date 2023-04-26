@@ -21,5 +21,21 @@ int main(void)
 	n = _printf("AI is %c\n", "good");
 	printf("(string len %d)\n", n);
 
+	/* print non printable characters with specifier */
+	n = _printf("This is a new line %S", "\n");
+	printf("( string len %d)\n", n);
+
+	/* Expected output: 64*/
+	n = _printf("%X", 100);
+	printf(" (%d chars)\n", n);
+
+	/* Expected output: 101 7A*/
+	n = _printf("%X", 122);
+	printf(" (%d chars)\n", n);
+
+	/* print a string with specifiers */
+        n = _printf("%r", "printf project");
+        printf("(string len %d)\n", n);
+
 	return (0);
 }
