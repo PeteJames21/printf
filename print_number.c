@@ -6,7 +6,7 @@
 * print_d - print a base 10 integer
 * @args: va_list containing argument to be printed
 *
-* Description - the integer is first converted to a sring before it is printed
+* Description - The integer is first converted to a sring before it is printed
 *
 * Return: the number of characters printed
 */
