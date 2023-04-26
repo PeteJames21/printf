@@ -26,6 +26,9 @@ int main(void)
 	n = _printf("%d%% all the time", 100);
 	printf(" (%d chars)\n\n", n);
 
+	n = _printf("%s and %s", "cats", "dogs");
+	printf(" (%d chars)\n\n", n);
+
 	n = _printf("%r", "abcd");
 	printf(" (%d chars)\n\n", n);
 
@@ -44,7 +47,7 @@ int main(void)
 	printf(" (%d chars)\n", n);
 	/* Expected output: 1 (1 chars)*/
 	n = _printf("%b", 1);
-	printf(" (%d chars)\n\n", n)
+	printf(" (%d chars)\n\n", n);
 	/* Expected output: 0 (1 chars)*/
 	n = _printf("%b", -500);
 	printf(" (%d chars)\n\n", n);

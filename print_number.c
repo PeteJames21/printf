@@ -86,7 +86,8 @@ int count_chars(int n)
 int print_b(va_list args)
 {
 	unsigned int count = 0;
-	unsigned int arg = va_arg(args, int);
+	int arg_ = va_arg(args, int);
+	unsigned int arg = (arg_ < 0) ? -1 * arg_ : arg_;
 
 	if (arg == 0)
 	{

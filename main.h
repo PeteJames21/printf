@@ -12,11 +12,13 @@ int print_d(va_list args);
 int count_chars(int n);
 int rot13(va_list args);
 int print_b(va_list args);
-void int_to_bin(int n, int *i);
-void int_to_hex(unsigned int n, int *i);
+void int_to_bin(int n, unsigned int *i);
+void int_to_hex(unsigned int n, int *i, int uppercase);
 int print_x(va_list args);
 int print_X(va_list args);
 int print_S(va_list args);
 int print_s(va_list args);
+int print_o(va_list args);
+void int_to_oct(int n, unsigned int *i);
 
 #endif
