@@ -8,5 +8,6 @@ int main(void)
 	n = _printf("%S", "Best\nSchool");
 	printf(" (%d chars)\n", n);
 
+
 	return (0);
 }
